@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>نموذج تواصل</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      direction: rtl;
+    }
+
+    .contact-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #3498db;
+      outline: none;
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+
+    .contact-form button {
+      background-color: #3498db;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <form class="contact-form" action="https://formspree.io/f/xdkowdzv" method="post">
+    <h2>تواصل معنا</h2>
+    <label for="name">الاسم الكامل</label>
+    <input type="text" id="name" name="name" placeholder="ادخل اسمك" required />
+
+    <label for="email">البريد الإلكتروني</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required />
+
+    <label for="message">الرسالة</label>
+    <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+    <button type="submit">إرسال</button>
+  </form>
+</body>
+</html>
